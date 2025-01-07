@@ -1425,3 +1425,42 @@ body.loaded {
         width: 37.4rem
     }
 }
+
+#contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #515151;
+    border-radius: 4px;
+    background-color: white;
+    color: #515151;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #515151;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
