@@ -7,16 +7,16 @@
     mix-blend-mode: luminosity;
 }
 
-div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: 'Roboto', sans-serif;
+    font: "Roboto", sans-serif;
     vertical-align: baseline
 }
 
-article,aside,details,figcaption,figure,header,hgroup,menu,nav,section {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
     display: block
 }
 
@@ -27,27 +27,7 @@ a {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensures the body takes up full height */
-    overflow: auto;
-    height: 100vh;
-}
-
-body.locked {
-    overflow: hidden; /* Lock scrolling */
-}
-
-.app {
-    flex: 1; /* Makes sure content takes up all available space */
-}
-
-#contact-form input, #contact-form textarea, #contact-form button {
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
-    font-size: 16px;
-    border: 1px solid #ddd;
+    line-height: 1
 }
 
 button {
@@ -55,7 +35,7 @@ button {
     border: none;
     color: black;
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+    font: "Roboto", sans-serif;
     outline: none;
     padding: 0
 }
@@ -221,7 +201,7 @@ html {
 body {
     background: #fff;
     color: #000;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     height: var(--100vh);
     opacity: 0;
     overflow: hidden;
@@ -240,7 +220,7 @@ body.loaded {
 }
 
 @font-face {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     src: url(Roboto-Regular.ttf) format("truetype"),url(Roboto-Regular.ttf) format("truetype")
 }
@@ -257,7 +237,7 @@ body.loaded {
 }
 
 .about__title {
-    font: 3rem 'Roboto', sans-serif;
+    font: 3rem "Roboto", sans-serif;
     left: 10rem;
     letter-spacing: .1rem;
     overflow: hidden;
@@ -904,7 +884,7 @@ body.loaded {
 }
 
 .home__link {
-    font: 2.4rem 'Roboto', sans-serif;
+    font: 2.4rem "Roboto", sans-serif;;
     letter-spacing: .1rem;
     margin-top: 1rem;
     position: absolute;
@@ -1105,7 +1085,7 @@ body.loaded {
 }
 
 .project__sections__header__title {
-    font: 3rem 'Roboto', sans-serif;
+    font: 3rem "Roboto", sans-serif;;
     letter-spacing: -.05rem;
     overflow: hidden
 }
@@ -1172,7 +1152,7 @@ body.loaded {
 }
 
 .project__sections__content__description h1 {
-    font: 10rem 'Roboto', sans-serif;
+    font: 10rem "Roboto", sans-serif;;
     letter-spacing: -.05rem;
     line-height: 1;
     margin: 0 auto 2.5rem;
@@ -1444,43 +1424,4 @@ body.loaded {
         height: 23.3rem;
         width: 37.4rem
     }
-}
-
-#contact {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #515151;
-    border-radius: 4px;
-    background-color: white;
-    color: #515151;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    outline: none;
-}
-
-textarea {
-    height: 150px;
-}
-
-button {
-    background-color: #515151;
-    color: white;
-    padding: 10px;
-    border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
 }
