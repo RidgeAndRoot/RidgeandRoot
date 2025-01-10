@@ -4494,7 +4494,6 @@ class po {
         e.style.opacity = 0,
         e.style.position = "absolute",
         e.style.top = 0,
-        document.body.appendChild(e)
     }
 }
 class mo {
